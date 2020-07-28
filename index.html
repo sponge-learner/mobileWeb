@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<link rel="stylesheet" type="text/css" href="css/reset.css" />
+		<title>score</title>
+		<style type="text/css">
+			html,
+			body {
+				background-color: #f9f9f9 !important;
+			}
+
+			header {
+				padding: 2.13vw 3.07vw;
+				display: flex;
+				flex-direction: row;
+				justify-content: space-between;
+				align-items: center;
+				background-color: white;
+			}
+
+			.more {
+				text-align: center;
+				transform: rotate(90deg);
+			}
+
+			header .title {
+				color: black;
+				font-size: 4.53vw;
+			}
+
+			header .more {
+				color: black;
+				font-size: 4.53vw;
+			}
+
+			.content {
+				padding: 2.8vw 3.2vw;
+			}
+
+			.balance-box {
+				padding: 2.67vw 3.33vw;
+				background-color: white;
+				border: 0.13vw solid #eee;
+				font-size: 3.47vw;
+				display: flex;
+				justify-content: space-between;
+			}
+
+			.balance {
+				color: #000000;
+			}
+
+			.balance-box .label {
+				color: #7e7e7e;
+			}
+
+			.score-list {
+				margin-top: 1.87vw;
+				background-color: white;
+				border: 0.13vw solid #eee;
+			}
+
+			.score-list th {
+				text-align: center;
+				padding: 3.6vw 0;
+				font-size: 3.47vw;
+			}
+
+			.score-list tbody tr td {
+				padding: 3.1vw;
+				font-size: 3.47vw;
+				box-sizing: border-box;
+			}
+
+			.score-list tbody .time {
+				font-size: 2.67vw;
+			}
+
+			.score-list thead {
+				border-bottom: 1px solid #eee;
+				color: #000000;
+				font-size: 3vw;
+			}
+
+			.score-list th:first-child {
+				width: 25.6vw;
+			}
+
+			.score-list th:nth-child(2) {
+				width: 46.2vw;
+			}
+
+			.score-list th:nth-child(3) {
+				width: 19.6vw;
+			}
+
+			.score-list tbody tr>td:nth-child(1) {
+				padding-right: 7.0vw;
+				text-align: right;
+
+			}
+
+			.score-list tbody tr>td:nth-child(2) {}
+
+			.score-list tbody tr>td:nth-child(3) {
+				text-align: center;
+			}
+		</style>
+	</head>
+	<body>
+		<!-- header -->
+		<header>
+			<div class="title">我的积分</div>
+			<div class="more">...</div>
+		</header>
+		<!-- 内容 -->
+		<div class="content">
+			<!-- 余额 -->
+			<div class="balance-box">
+				<div class="label">
+					当前积分余额
+				</div>
+				<div class="balance">
+					1532
+				</div>
+			</div>
+			<!-- 积分的列表 -->
+			<table border="0" cellspacing="" cellpadding="" class="score-list">
+				<thead>
+					<tr>
+						<th>消费日期</th>
+						<th>消费产品</th>
+						<th>积分抵扣</th>
+					</tr>
+				</thead>
+				<tbody>
+					<tr>
+						<td>
+							<div class="data">
+								2018.11.10
+							</div>
+							<div class="time">
+								12.03
+							</div>
+						</td>
+						<td>
+							产品名称产品名称产品名称产品名称产品名称产品名称产品名称产品名称产品名称产品名称
+						</td>
+						<td>
+							+24
+						</td>
+					</tr>
+					<tr>
+						<td>
+							<div class="data">
+								2018.11.10
+							</div>
+							<div class="time">
+								12.03
+							</div>
+						</td>
+						<td>
+							产品名称产品名称产品名称产品名称产品名称产品名称产品名称产品名称产品名称产品名称
+						</td>
+						<td>
+							+24
+						</td>
+					</tr>
+					<tr>
+						<td>
+							<div class="data">
+								2018.11.10
+							</div>
+							<div class="time">
+								12.03
+							</div>
+						</td>
+						<td>
+							产品名称产品名称产品名称产品名称产品名称产品名称产品名称产品名称产品名称产品名称
+						</td>
+						<td>
+							+24
+						</td>
+					</tr>
+				</tbody>
+			</table>
+		</div>
+	</body>
+</html>

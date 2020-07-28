@@ -1,0 +1,238 @@
+header {
+	background-color: red;
+}
+
+header .back {
+	border-color: white;
+}
+
+header .title {
+	color: white;
+	font-size: 3.5vw;
+}
+
+.person_ifo {
+	padding: 4vw 3vw;
+	background-color: red;
+}
+
+.person_ifo .mid {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	align-items: flex-end;
+}
+
+.person_ifo .mid .photo img{
+	width: 8vw;
+	margin-top: 2vw;
+}
+.person_ifo .mid .photo {
+	text-align: center;
+	line-height: 15vw;
+	width: 15vw;
+	height: 15vw;
+	background-color: white;
+	border-radius: 12vw;
+	box-sizing: border-box;
+}
+
+.person_ifo .mid .gold {
+	font-size: 6vw;
+	color: white;
+}
+
+.person_ifo .mid .money {
+	font-size: 6vw;
+	color: white;
+}
+
+.person_ifo .mid .gold img,
+.money img {
+	width: 4vw;
+}
+
+.person_ifo .bot {
+	padding-top: 0vw;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+}
+
+.person_ifo .bot .integral_btn,
+.person_ifo .bot .money_btn {
+	height: 6vw;
+	padding: 1vw 2vw;
+	color: white;
+	font-size: 3vw;
+	border-radius: 2vw;
+	background-color: #e1c079;
+	box-sizing: border-box;
+}
+
+.person_ifo .bot .id {
+	text-align: center;
+	color: white;
+	font-size: 5vw;
+}
+
+.person_ifo .bot .id>p:last-child {
+	font-size: 4vw;
+}
+
+.person_content {
+	padding: 3vw;
+}
+
+.person_content .myOlder {
+	padding: 3vw;
+	background-color: white;
+	border-radius: 2vw;
+}
+
+.person_content .myOlder .title {
+	display: flex;
+	flex-direction: row;
+	font-size: 4vw;
+	color: #000000;
+}
+
+.person_content .myOlder .content {
+	padding-top: 6vw;
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	position: relative;
+
+}
+
+.person_content .myOlder .content>div {
+	text-align: center;
+	width: calc(100% / 5);
+	height: auto;
+}
+
+.person_content .myOlder .content>div img {
+	width: 5vw;
+	height: 5vw;
+}
+
+.person_content .myOlder .content>div p {
+	padding-top: 2vw;
+	color: #000000;
+	font-size: 3vw;
+}
+
+.person_content .myServer {
+	padding: 3vw;
+	background-color: white;
+	border-radius: 2vw;
+}
+
+.person_content .myServer .title {
+	display: flex;
+	flex-direction: row;
+	font-size: 4vw;
+	color: #000000;
+}
+
+.person_content .myServer .content {
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	position: relative;
+
+}
+
+.person_content .myServer .content>div {
+	text-align: center;
+	width: calc(100% / 4);
+	height: auto;
+	margin-top: 2vw;
+}
+
+.person_content .myServer .content>div img {
+	width: 5vw;
+	height: 5vw;
+}
+
+.person_content .myServer .content>div p {
+	padding-top: 3vw;
+	color: #000000;
+	font-size: 3.5vw;
+}
+
+.person_content .myServer .content::after {
+	content: "";
+	width: 100%;
+	height: 2px;
+	background-color: #ececec;
+	position: absolute;
+	bottom: 0px;
+	left: 0px;
+
+}
+
+.person_content .myServer .content2 {
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	position: relative;
+
+}
+
+.person_content .myServer .content2>div {
+	text-align: center;
+	width: calc(100% / 4);
+	height: auto;
+	margin-top: 2vw;
+}
+
+.person_content .myServer .content2>div img {
+	width: 5vw;
+	height: 5vw;
+}
+
+.person_content .myServer .content2>div p {
+	padding-top: 3vw;
+	color: #000000;
+	font-size: 3.5vw;
+}
+
+.bot_nav {
+	background-color: white;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	width: 100vw;
+	position: fixed;
+	bottom: 0px;
+	padding: 4vw 0vw;
+}
+
+.bot_nav>div {
+	text-align: center;
+	padding: 2vw;
+	width: calc(100% /5);
+}
+
+.bot_nav>div p {
+	padding-top: 2vw;
+	font-size: 3vw;
+}
+
+.bot_nav>div img {
+	width: 5vw;
+	height: 5vw;
+}
+
+
+
+/* .person_ifo .mid>div{
+			width: 50px;
+			height: 50px;
+			background-color: #000000;
+		} */
+.clear{
+	margin-top: 13vw;
+}

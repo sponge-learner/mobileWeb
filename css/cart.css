@@ -1,0 +1,270 @@
+header {
+	/* display: none; */
+	position: fixed;
+	top: 0px;
+	width: 92vw;
+	z-index: 200;
+	padding: 3vw 4vw;
+	background-color: white;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	border-bottom: 1px solid #E2E2E2;
+}
+
+.clear {
+	margin-top: 17vw;
+}
+
+header>div {
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+}
+
+header .back {
+	padding: 1vw 3vw;
+	text-align: center;
+	border-right: 0.5vw solid black;
+}
+
+header .back img {
+	height: 4vw;
+	width: auto;
+}
+
+header .title {
+	padding: 1vw 3vw;
+	font-size: 20px;
+	color: #000000;
+}
+header .more img{
+	height: 5vw;
+}
+
+.down {
+	display: flex;
+	flex-direction: row;
+	background-color: white;
+	position: fixed;
+	bottom: 0px;
+	padding-left: 4vw;
+	width: 100vw;
+	height: 14vw;
+	box-sizing: border-box;
+}
+
+.down .sum {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	line-height: 14vw;
+	width: 66vw;
+	height: 100%;
+	background-color: white;
+	padding-right: 4vw;
+	box-sizing: border-box;
+}
+
+.down .down_btn {
+	width: 30vw;
+	height: 100%;
+	background-color: red;
+}
+
+.down .sum .white_point {
+	display: inline-block;
+	width: 2vw;
+	height: 2vw;
+	border-radius: 2vw;
+	border: 1px solid #E5E5E5;
+}
+
+.down .sum>div:last-child {
+	font-size: 1.5rem;
+	color: red;
+}
+
+.white_point~span {
+	font-size: 1.4rem;
+	margin-left: 3vw;
+}
+.white_point:hover{
+	background-color: red;
+}
+.down .down_btn {
+	text-align: center;
+	line-height: 14vw;
+	color: white;
+	font-size: 1.5rem;
+}
+
+.content {
+	background-color: white;
+	padding: 1vw 2vw;
+}
+
+.content .goods {
+	display: none;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	position: relative;
+}
+
+/* .content>.content .goods .ifo::before{
+	content: "";
+	width: 2vw;
+	height: 2vw;
+	border-radius: 2vw;
+	border: 1px solid #EEEEEE;
+	position: absolute;
+	left: -28vw;
+	bottom: 12vw;
+} */
+.content>.content .goods:hover .ifo::before{
+	background-color: red;
+}
+.content .goods .picture img {
+	width: 19vw;
+	height: 21vw;
+	border-radius: 1vw;
+}
+
+.content .goods .ifo {
+	display: flex;
+	flex-direction: column;
+	padding: 0vw 2vw 0vw 3vw;
+}
+
+.content .goods .ifo>* {
+	padding: 1vw 0px;
+}
+
+.content .counts {
+	display: flex;
+	flex-direction: row;
+}
+
+.content .counts .title {
+	color: #000000;
+}
+
+.content .counts ul {
+	display: flex;
+	flex-direction: row;
+}
+
+.content .counts ul li {
+	border: 1px solid black;
+	border-collapse: unset;
+	text-align: center;
+	padding: 1vw;
+	height: 2vw;
+	width: 3vw;
+	line-height: 2vw;
+	border-color: #b2b2b2;
+}
+
+.content .counts ul li:last-child {
+	border-bottom-right-radius: 1vw;
+	border-top-right-radius: 1vw;
+}
+
+.content .counts ul li:first-child {
+	border-bottom-left-radius: 1vw;
+	border-top-left-radius: 1vw;
+}
+
+.content .goods .ifo .sum {
+	display: flex;
+	flex-direction: row;
+	padding: 0px;
+	margin: 0px;
+}
+
+.content .goods .ifo .sum>span {
+	color: red;
+	font-size: 1.5rem;
+}
+
+.content .goods .ifo .sum .display {
+	color: black;
+}
+
+.buy_more {
+	padding: 2vw 4vw;
+	background-color: white;
+	margin-top: 2vw;
+}
+
+.buy_more .title {
+	padding: 1vw;
+	text-align: center;
+	color: black;
+	font-size: 1.4rem;
+}
+
+.recommend_goods {
+	padding-top: 4vw;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+}
+
+.recommend_goods img {
+	width: 26vw;
+	height: 26vw;
+}
+
+.goods_ifo {
+	color: #000000;
+	font-size: 1.1rem;
+	padding-left: 3vw;
+	position: relative;
+}
+
+.goods_ifo img {
+	width: 3vw;
+	height: auto;
+}
+
+.goods_ifo>p:first-child~p {
+	margin-top: 3vw;
+}
+
+.goods_ifo>p:nth-child(2) {
+	font-size: 1.0rem;
+	color: red;
+}
+
+.goods_ifo>p:nth-child(2)>span:last-child {
+	color: #000000;
+}
+
+.red2 {
+	display: inline-block;
+	padding: 0.5vw 3vw;
+	font-size: 0.9rem;
+	border-radius: 10px;
+	color: white;
+	background-color: red;
+}
+
+.goods_ifo>p:nth-child(3) {
+	font-size: 1.1rem;
+	color: red;
+}
+
+.goods_ifo>p:nth-child(3)>span:last-child {
+	color: #929292;
+}
+
+.goods_ifo::after {
+	content: "";
+	width: 90%;
+	height: 1px;
+	background-color: #e2e2e2;
+	position: absolute;
+	bottom: 0px;
+}

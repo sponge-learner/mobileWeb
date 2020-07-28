@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<script src="js/jquery-3.5.1.min.js" type="text/javascript" charset="utf-8"></script>
+		<link rel="stylesheet" type="text/css" href="css/cart.css" />
+		<link rel="stylesheet" type="text/css" href="css/reset.css" />
+		<meta charset="utf-8">
+		<title></title>
+		<style type="text/css">
+			.choose {
+				width: 2vw;
+				height: 2vw;
+				border-radius: 2vw;
+				border: 1px solid #eee;
+				position: absolute;
+				top: 12vw;
+				left: 0px;
+				z-index: 200;
+
+			}
+		</style>
+	</head>
+	<script>
+		window.onload = function() {
+			var get = localStorage.getItem("shoping");
+			var shoping = JSON.parse(get);
+			// localStorage.clear();	
+			console.log(shoping);
+			$(shoping).each(function(index) {
+				$(".addcontent").append(
+					"<div class='content goods'><span class = 'choose'></span><div class='content goods picture'>" + this.picture +
+					"</div><div class='content goods ifo'><p>水星家纺提花套件欧式简约提花四件套侧耳倾听1.5米/1.8米床上用品</p><span>1.8M床：适用2M×2.4M被芯</span><div class='content goods ifo sum'><span class='pirce'>" +
+					this.pirce +
+					"</span><div class='counts'><ul><li class='sub'>-</li><li class='display'>" + this.counts +
+					"</li><li class='add'>+</li></ul></div></div></div></div>"
+				);
+			});
+			var choose = true;
+			var allchoose = true;
+			$(".white_point").click(function() {
+				if (allchoose) {
+					$(".choose").css("background", "red");
+					choose = false;
+					allchoose = false;
+				} else {
+					$(".choose").css("background", "white");
+					choose = true;
+					allchoose = true;
+				}
+
+			});
+
+			$(".choose").click(function() {
+				if (choose) {
+					$(this).css("background", "red");
+					choose = false;
+				} else {
+					$(this).css("background", "white");
+					choose = true;
+
+				}
+
+
+			});
+			var $display = $(".display");
+			//数量增加事件
+			$(".add").click(function() {
+				var $num = $(this).siblings(".display").text()
+				var num = parseInt($num);
+				var addnum = num + 1;
+				$(this).siblings(".display").text(addnum);
+				$(".allsum").text(sum());
+
+			});
+			//数量减少事件
+			$(".sub").click(function() {
+				var $num = $(this).siblings(".display").text()
+				var subnum = parseInt($num) - 1;
+				if (subnum > -1) {
+					$(this).siblings(".display").text(subnum);
+				}
+				if ($num == 0) {
+					$(this).parents(".content .goods").html("");
+				}
+				$(".allsum").text(sum());
+			});
+
+			$(".back").click(function() {
+				window.history.go(-1);
+				console.log("0");
+			});
+
+			function sum() {
+				var sum = 0;
+				$(".pirce").each(function(index) {
+					var pirce = parseInt($(this).text());
+					console.log(pirce);
+					var count = parseInt($(this).siblings(".counts").find("li:eq(1)").text());
+					console.log(count);
+					sum += pirce * count;
+				});
+				return sum;
+			};
+			$(".down_btn").click(function() {
+				localStorage.removeItem("shoping");
+				$(shoping).each(function(index) {
+					$(".addcontent").html("");
+				});
+
+			});
+
+		};
+	</script>
+	<body>
+		<!-- header -->
+		<div class="clear">
+			<header>
+				<div>
+					<div class="back">
+						<img src="img/2_03.jpg">
+					</div>
+					<div class="title">
+						购物车
+					</div>
+				</div>
+				<div class="more">
+					<img src="img/2_05.jpg">
+				</div>
+			</header>
+		</div>
+		<!-- 商品 -->
+		<div class="content addcontent">
+
+		</div>
+
+		<div class="buy_more">
+			<div class="title">大家都在买</div>
+			<div class="recommend_goods">
+				<div class="picture">
+					<img src="img/2_32.jpg">
+				</div>
+				<div class="goods_ifo">
+					<p>高端GNF不锈钢脚踢垃圾桶家用40L大容量30L厨房20L客厅8L有盖...</p>
+					<p><img src="img/2_41.jpg">积分抵扣：27.9 <span class="red2">
+							到手价
+						</span><span>￥61.9 </span></p>
+					<p><img src="img/2_45.jpg">赚：13.19 <span>佣金比例：15.00% </span></p>
+				</div>
+			</div>
+			<div class="recommend_goods">
+				<div class="picture">
+					<img src="img/2_32.jpg">
+				</div>
+				<div class="goods_ifo">
+					<p>高端GNF不锈钢脚踢垃圾桶家用40L大容量30L厨房20L客厅8L有盖...</p>
+					<p><img src="img/2_41.jpg">积分抵扣：27.9 <span class="red2">
+							到手价
+						</span><span>￥61.9 </span></p>
+					<p><img src="img/2_45.jpg">赚：13.19 <span>佣金比例：15.00% </span></p>
+				</div>
+			</div>
+			<div class="recommend_goods">
+				<div class="picture">
+					<img src="img/2_32.jpg">
+				</div>
+				<div class="goods_ifo">
+					<p>高端GNF不锈钢脚踢垃圾桶家用40L大容量30L厨房20L客厅8L有盖...</p>
+					<p><img src="img/2_41.jpg">积分抵扣：27.9 <span class="red2">
+							到手价
+						</span><span>￥61.9 </span></p>
+					<p><img src="img/2_45.jpg">赚：13.19 <span>佣金比例：15.00% </span></p>
+				</div>
+			</div>
+			<div class="recommend_goods">
+				<div class="picture">
+					<img src="img/2_32.jpg">
+				</div>
+				<div class="goods_ifo">
+					<p>高端GNF不锈钢脚踢垃圾桶家用40L大容量30L厨房20L客厅8L有盖...</p>
+					<p><img src="img/2_41.jpg">积分抵扣：27.9 <span class="red2">
+							到手价
+						</span><span>￥61.9 </span></p>
+					<p><img src="img/2_45.jpg">赚：13.19 <span>佣金比例：15.00% </span></p>
+				</div>
+			</div>
+
+		</div>
+		<!-- 底部 按钮 -->
+		<div class="down">
+			<div class="sum">
+				<div>
+					<span class="white_point"></span><span>全选</span>
+				</div>
+				<div>
+					<span>合计:￥</span><span class="allsum">0</span>
+				</div>
+
+			</div>
+			<div class="down_btn">
+				下单
+			</div>
+		</div>
+	</body>
+</html>

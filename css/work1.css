@@ -1,0 +1,197 @@
+			header {
+				padding: 3vw 4vw;
+				background-color: white;
+				display: flex;
+				flex-direction: row;
+				justify-content: space-between;
+			}
+
+			header>div {
+				display: flex;
+				flex-direction: row;
+				align-items: center;
+			}
+
+			header .back {
+				padding: 1vw 4vw 1vw 1vw;
+				text-align: center;
+				border-right: 0.5vw solid black;
+			}
+
+			header .back img {
+				height: 4vw;
+				width: auto;
+			}
+
+			header .title {
+				padding: 1vw 3vw;
+				font-size: 20px;
+				color: #000000;
+			}
+
+			.input {
+				padding: 0 4vw;
+				background-color: white;
+			}
+
+			.input input {
+				width: 100%;
+				height: 9vw;
+				text-align: center;
+				border: 0px;
+				border-radius: 5px;
+				background: url(img/font_03.jpg) no-repeat;
+				background-size: 6vw;
+				background-position: 29vw 1vh;
+				background-color: #f4f8f7;
+			}
+
+			.more img {
+				width: 1vw;
+				height: 4vw;
+			}
+
+			.rotaty {
+				padding: 2vw 4vw;
+				box-sizing: border-box;
+				background-color: white;
+			}
+
+			.swiper-container {
+				overflow: hidden;
+				width: 100%;
+				height: auto;
+
+			}
+
+			.swiper-container img {
+				width: 92vw;
+			}
+
+			.allgoods {
+				overflow: hidden;
+				padding: 4vw 4vw;
+				background-color: white;
+				display: flex;
+				flex-direction: row;
+			}
+
+			.allgoods>div {
+				width: calc(100% / 4);
+			}
+
+			.allgoods>div img {
+
+				display: block;
+				margin: 0 auto;
+			}
+
+			.name {
+				padding-top: 3vw;
+				text-align: center;
+				font-size: 3vw;
+				color: #000000;
+			}
+
+			.content {
+				padding: 0 4vw;
+				background-color: white;
+				margin-top: 2vw;
+				width: 92vw;
+			}
+
+			.recommend {
+				display: flex;
+				flex-direction: row;
+				justify-content: space-between;
+			}
+
+			.recommend .title {
+				padding: 4vw 0 3vw 0;
+				font-size: 18px;
+				color: #000000;
+				position: relative;
+			}
+
+			.recommend .title::after {
+				content: "";
+				width: 100vw;
+				height: 1px;
+				background-color: #dcdcdc;
+				position: absolute;
+				top: 12vw;
+				left: -4vw;
+			}
+
+			.recommend .more {
+				padding: 4vw 0 2vw 0;
+				font-size: 18px;
+				color: #000000;
+			}
+
+			.recommend .more img {
+				height: 4vw;
+				transform: rotate(180deg);
+			}
+
+			.recommend_goods {
+				padding-top: 4vw;
+				display: flex;
+				flex-direction: row;
+				justify-content: space-between;
+			}
+
+			.recommend_goods img {
+				width: 26vw;
+				height: 26vw;
+			}
+
+			.ifo {
+				color: #000000;
+				font-size: 3vw;
+				padding-left: 3vw;
+				position: relative;
+			}
+
+			.ifo img {
+				width: 3vw;
+				height: auto;
+			}
+
+			.ifo>p:first-child~p {
+			margin-top: 5vw;
+			}
+
+			.ifo>p:nth-child(2) {
+				font-size: 3vw;
+				color: red;
+			}
+
+			.ifo>p:nth-child(2)>span:last-child {
+				color: #000000;
+			}
+
+			.red {
+				padding: 0.5vw 3vw;
+				font-size: 3vw;
+				border-radius: 10px;
+				color: white;
+				background-color: red;
+			}
+
+			.ifo>p:nth-child(3) {
+				font-size: 3vw;
+				color: red;
+			}
+
+			.ifo>p:nth-child(3)>span:last-child {
+				color: #929292;
+			}
+			.ifo::after{
+				content: "";
+				width: 100%;
+				height: 1px;
+				background-color: #e2e2e2;
+				position: absolute;
+				bottom: 0px;
+			}

@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<link rel="stylesheet" type="text/css" href="css/reset.css" />
+		<script src="js/jquery-3.5.1.min.js" type="text/javascript" charset="utf-8"></script>
+		<script src="js/PCASClass.js" type="text/javascript" charset="utf-8"></script>
+		<link rel="stylesheet" type="text/css" href="css/public.css" />
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<title></title>
+		<style type="text/css">
+			header .more img{
+				height: 5vw;
+			}
+			
+			.clear {
+				margin-top: 13vw;
+			}
+
+			.myAddress {
+				background-color: white;
+				padding: 2vw 4vw 2vw 4vw;
+			}
+
+			.clear~div {
+				margin-top: 4vw;
+			}
+
+			.myAddress div {
+				padding: 1vw 0px;
+				padding-right: 4vw;
+				color: #000000;
+				font-size: 1.4rem;
+			}
+
+			.myAddress_ifo {
+				position: relative;
+			}
+
+			.myAddress_ifo .getAddress::after {
+				content: "";
+				width: calc(100% + 4vw);
+				height: 1px;
+				background-color: #E2E2E2;
+				position: absolute;
+				bottom: 0px;
+				left: -2vw;
+			}
+
+			.myAddress .bot_edit {
+
+				padding: 2vw 0px;
+				display: flex;
+				flex-direction: row;
+				justify-content: space-between;
+				align-items: center;
+			}
+
+			.myAddress .bot_edit .edit_address span:last-child {
+				font-size: 1.2rem;
+				margin-left: 2vw;
+			}
+
+			.myAddress .bot_edit .edit_address span:first-child {
+				display: inline-block;
+				border: 1px solid #ededed;
+				background-color: #FFF;
+				width: 2vw;
+				height: 2vw;
+				border-radius: 2vw;
+			}
+
+			.myAddress .bot_edit .edit_button {
+				display: flex;
+				flex-direction: row;
+				align-items: center;
+			}
+
+			.myAddress .bot_edit .edit_button button {
+				margin-right: 7vw;
+				width: 22vw;
+				padding: 1vw 1vw;
+				border: 0px;
+				background-color: red;
+				color: white;
+				border-radius: 1vw;
+			}
+
+			.myAddress .bot_edit .edit_button img {
+				width: 7vw;
+			}
+		</style>
+	</head>
+	<body>
+		<header>
+			<div>
+				<div class="back">
+					<img src="img/close_black.jpg">
+				</div>
+				<div class="title">
+					我的地址
+				</div>
+			</div>
+			<div class="more">
+				<img src="img/2_05.jpg">
+			</div>
+		</header>
+		<div class="clear">
+			<div class="myAddress">
+				<div class="myAddress_ifo">
+					<div class="getMan">收货人：***</div>
+					<div class="cellNumber">联系方式：123456</div>
+					<div class="getAddress">收货地址：山东省青岛市黄岛区长江街道庐山路天泰阳光海岸小区</div>
+				</div>
+				<div class="bot_edit">
+					<div class="edit_address">
+						<span></span><span>默认地址</span>
+					</div>
+					<div class="edit_button">
+						<button class="btn">
+							编辑
+						</button>
+						<span class="del_picture">
+							<img src="img/delete.png">
+						</span>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="myAddress">
+			<div class="myAddress_ifo">
+				<div class="getMan">收货人：***</div>
+				<div class="cellNumber">联系方式：123456</div>
+				<div class="getAddress">收货地址：山东省青岛市黄岛区长江街道庐山路天泰阳光海岸小区</div>
+			</div>
+			<div class="bot_edit">
+				<div class="edit_address">
+					<span></span><span>默认地址</span>
+				</div>
+				<div class="edit_button">
+					<button class="btn">
+						编辑
+					</button>
+					<span class="del_picture">
+						<img src="img/delete.png">
+					</span>
+				</div>
+			</div>
+		</div>
+	
+		<div class="save">添加新地址</div>
+	</body>
+</html>

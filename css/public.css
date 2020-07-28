@@ -1,0 +1,113 @@
+header {
+	position: fixed;
+	top: 0px;
+	width: 92vw;
+	z-index: 200;
+	padding: 3vw 4vw;
+	background-color: white;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	border-bottom: 1px solid #E2E2E2;
+}
+
+.clear {
+	margin-top: 14.9vw;
+}
+
+header>div {
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+}
+
+header .back {
+	padding: 1vw 3vw;
+	text-align: center;
+	border-right: 0.5vw solid black;
+}
+
+header .back img {
+	height: 4vw;
+	width: auto;
+}
+
+header .title {
+	padding: 1vw 3vw;
+	font-size: 20px;
+	color: #000000;
+}
+
+.address_ifo {
+	background-color: white;
+}
+
+.address_ifo .person_ifo {
+	border-top: 1px solid #eee;
+	border-bottom: 1px solid #eee;
+	width: 100vw;
+	display: flex;
+	flex-direction: row;
+}
+
+.address_ifo .person_ifo div {
+	width: 50vw;
+	padding: 4vw;
+	color: #000000;
+	font-size: 1.6rem;
+}
+
+.address_ifo .person_ifo div:last-child {
+	border-left: 1px solid #eee;
+}
+
+.address_ifo .com_address {
+	padding: 4vw;
+	border-top: 1px solid #eee;
+	border-bottom: 1px solid #eee;
+	color: #000000;
+	font-size: 1.6rem;
+}
+
+fieldset {
+	border: 0px;
+	border-top: 1px solid #eee;
+	border-bottom: 1px solid #eee;
+	padding: 0px;
+	margin: 0px;
+}
+
+select {
+	text-align: center;
+	padding-left: 10vw;
+	padding: 4vw 0px;
+	font-size: 1.5rem;
+	margin: 0px;
+	width: calc(100% / 3 - 3px);
+	border: 0px;
+
+}
+
+[name=province6] {
+	padding-left: 10vw;
+}
+
+[name=city6] {
+	padding-left: 10vw;
+}
+
+[name=area6] {
+	padding-left: 10vw;
+}
+
+.save {
+	position: fixed;
+	font-size: 1.6rem;
+	bottom: 0px;
+	text-align: center;
+	line-height: 12vw;
+	width: 100vw;
+	padding:3vw 0px;
+	background-color: red;
+	color: white;
+}

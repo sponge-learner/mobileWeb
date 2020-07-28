@@ -1,0 +1,387 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<link rel="stylesheet" type="text/css" href="css/swiper.min.css" />
+		<script src="js/jquery-3.5.1.min.js" type="text/javascript" charset="utf-8"></script>
+		<script src="./js/swiper.min.js" type="text/javascript" charset="utf-8"></script>
+		<link rel="stylesheet" type="text/css" href="css/reset.css" />
+		<link rel="stylesheet" type="text/css" href="css/class_list.css" />
+		<meta charset="utf-8">
+		<title></title>
+		<style type="text/css">
+			header .more img{
+				height: 5vw;
+			}
+			
+			.input input {
+				width: 100%;
+				/* height: 9vw; */
+				text-align: center;
+				border: 0px;
+				border-radius: 5px;
+				background: url(img/font_03.jpg) no-repeat;
+				background-size: 6vw;
+				background-position: 35vw 1vh;
+				background-color: #f4f8f7;
+			}
+
+			.input {
+				border: 1px solid #eee;
+			}
+
+			.list_content {
+				background-color: white;
+				display: flex;
+				flex-direction: row;
+				justify-content: flex-end;
+			}
+
+			.left_list {
+				position: fixed;
+				left: 0;
+				padding-top: 3vw;
+				width: 20vw;
+				height: auto;
+				background-color: white;
+				border-right: 1px solid #eee;
+			}
+
+			.left_list div {
+				padding: 3vw;
+				color: #000000;
+				position: relative;
+				text-align: center;
+				font-size: 3vw;
+			}
+
+			.left_list>div:hover {
+				color: red;
+			}
+
+			.left_list>div:hover:after {
+				content: "";
+				width: 1vw;
+				height: 5vw;
+				background-color: red;
+				position: absolute;
+				left: 0vw;
+			}
+
+			.right_goods {
+				padding: 0vw 4vw 20vw 4vw;
+				background-color: white;
+			}
+
+			.floor .picture {
+				padding: 4vw 0vw 2vw 0vw;
+			}
+
+			.floor .picture img {
+				width: 70vw;
+			}
+
+			.floor .title {
+				padding: 2vw 0vw;
+				color: #000000;
+				font-size: 4vw;
+				border-bottom: 1px solid #eee;
+			}
+
+			.floor .content {
+				display: flex;
+				flex-direction: row;
+				flex-wrap: wrap;
+			}
+
+			.floor .content div {
+				padding: 4vw 0vw;
+				width: calc(100% / 3);
+				height: auto;
+				text-align: center;
+				color: #000000;
+			}
+
+			.floor .content div p {
+				padding-top: 2vw;
+				font-size: 3vw;
+			}
+
+			.floor .content img {
+				width: 9vw;
+				height: 9vw;
+			}
+
+			.bot_nav {
+				background-color: white;
+				display: flex;
+				flex-direction: row;
+				justify-content: space-between;
+				width: 100vw;
+				position: fixed;
+				bottom: 0px;
+				padding: 4vw 0vw;
+			}
+
+			.bot_nav>div {
+				text-align: center;
+				padding: 2vw;
+				width: calc(100% /5);
+			}
+
+			.bot_nav>div p {
+				padding-top: 2vw;
+				font-size: 3vw;
+			}
+
+			.bot_nav>div img {
+				width: 5vw;
+				height: 5vw;
+			}
+		</style>
+	</head>
+	<script>
+		window.onload =function(){
+			$(".left_list div").click(function(){
+				var index = $(this).index();
+				$(".right_goods").eq(index).show();			
+				$(".right_goods").eq(index).siblings(".right_goods").hide();
+				
+			});
+			// $(window).scroll(function(){
+			// 	var scrollTop = $(this).scrollTop();
+			// 	// 导航动画
+			// 	var height = document.documentElement.clientHeight / 2 ;
+			// 	console.log(height);
+			// 	// 滚动过程中，相应楼层高亮显示
+			// 	$('.floor .title').each(function(index) {
+			// 		// 获取元素距离窗口顶部的距离
+			// 		var top = $(this).offset().top - scrollTop;
+			// 		console.log(top);
+			// 		if (top < height) {
+			// 			$('.left_list div').eq(index).css("background", "red");
+			// 			$('.left_list div').eq(index).siblings().css("background", "white");
+			// 		}
+			// 	});
+				
+				
+			// });
+		  };
+	  </script>
+	<body>
+		<!-- header -->
+		<div class="clear">
+
+
+			<header>
+				<div>
+					<div class="back">
+						<img src="img/2_03.jpg">
+					</div>
+					<div class="title">
+						居家生活
+					</div>
+				</div>
+				<div class="more">
+					<img src="img/2_05.jpg">
+				</div>
+			</header>
+			<div class="input">
+				<input type="text" placeholder="  烤箱" />
+			</div>
+		</div>
+		<!-- 分类列表 -->
+		<div class="list_content">
+			<!-- 左边选项 -->
+			<div class="left_list">
+				<div>居家生活</div>
+				<div>个护清洁</div>
+				<div>服饰鞋包</div>
+				<div>美食酒水</div>
+				<div>运动旅行</div>
+				<div>母婴亲子</div>
+				<div>数码家电</div>
+				<div>美妆洗护</div>
+				<div>珠宝首饰</div>
+				<div>日用百货</div>
+
+			</div>
+			<!-- 右边内容 -->
+			<div class="right_goods">
+				<!-- 家具 -->
+				<div class="floor">
+					<div class="floor picture">
+						<img src="img/big.png">
+					</div>
+					<div class="floor title">
+						家纺床品
+					</div>
+					<div class="floor content">
+						<div><img src="img/1_03.jpg">
+							<p>春夏换新</p>
+						</div>
+						<div><img src="img/1_05.jpg">
+							<p>家纺床品</p>
+						</div>
+					</div>
+					<div class="floor title">
+						家具
+					</div>
+					<div class="floor content">
+						<div><img src="img/con1.png">
+							<p>春夏换新</p>
+						</div>
+						<div><img src="img/con2.png">
+							<p>家纺床品</p>
+						</div>
+						<div><img src="img/con3.png">
+							<p>春夏换新</p>
+						</div>
+						<div><img src="img/con4.png">
+							<p>家纺床品</p>
+						</div>
+						<div><img src="img/con5.png">
+							<p>春夏换新</p>
+						</div>
+						<div><img src="img/con6.png">
+							<p>家纺床品</p>
+						</div>
+					</div>
+
+					<div class="floor title">
+						家装
+					</div>
+					<div class="floor content">
+						<div><img src="img/con7.png">
+							<p>春夏换新</p>
+						</div>
+						<div><img src="img/con8.png">
+							<p>家纺床品</p>
+						</div>
+						<div><img src="img/con1.png">
+							<p>家纺床品</p>
+						</div>
+					</div>
+					<!-- 服装 -->
+					<div class="floor">
+						<div class="floor picture">
+							<img src="img/big2.png">
+						</div>
+						<div class="floor title">
+							男装
+						</div>
+						<div class="floor content">
+							<div><img src="img/con7.png">
+								<p>春夏换新</p>
+							</div>
+							<div><img src="img/con8.png">
+								<p>家纺床品</p>
+							</div>
+							<div><img src="img/con1.png">
+								<p>家纺床品</p>
+							</div>
+						</div>
+						<div class="floor title">
+							女装
+						</div>
+						<div class="floor content">
+							<div><img src="img/1_03.jpg">
+								<p>春夏换新</p>
+							</div>
+							<div><img src="img/1_05.jpg">
+								<p>家纺床品</p>
+							</div>
+							<div><img src="img/1_03.jpg">
+								<p>春夏换新</p>
+							</div>
+							<div><img src="img/1_05.jpg">
+								<p>家纺床品</p>
+							</div>
+							<div><img src="img/1_03.jpg">
+								<p>春夏换新</p>
+							</div>
+							<div><img src="img/1_05.jpg">
+								<p>家纺床品</p>
+							</div>
+						</div>
+
+						<div class="floor title">
+							童装
+						</div>
+						<div class="floor content">
+							<div><img src="img/1_03.jpg">
+								<p>春夏换新</p>
+							</div>
+							<div><img src="img/1_05.jpg">
+								<p>家纺床品</p>
+							</div>
+							<div><img src="img/1_05.jpg">
+								<p>家纺床品</p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="right_goods" style="display: none;">
+				<!-- 家具 -->
+				<div class="floor">
+					<div class="floor picture">
+						<img src="img/big.png">
+					</div>
+					<div class="floor title">
+						个护清洁
+					</div>
+					<div class="floor content">
+						<div><img src="img/1_03.jpg">
+							<p>春夏换新</p>
+						</div>
+						<div><img src="img/1_05.jpg">
+							<p>家纺床品</p>
+						</div>
+					</div>
+					<div class="floor title">
+						清洁用品
+					</div>
+					<div class="floor content">
+						<div><img src="img/con1.png">
+							<p>春夏换新</p>
+						</div>
+						<div><img src="img/con2.png">
+							<p>家纺床品</p>
+						</div>
+						<div><img src="img/con3.png">
+							<p>春夏换新</p>
+						</div>
+						<div><img src="img/con4.png">
+							<p>家纺床品</p>
+						</div>
+						<div><img src="img/con5.png">
+							<p>春夏换新</p>
+						</div>
+						<div><img src="img/con6.png">
+							<p>家纺床品</p>
+						</div>
+					</div>
+					<!-- 服装 -->
+				</div>
+			</div>
+			<div class="bot_nav">
+				<div><img src="img/home.png">
+					<p>首页</p>
+				</div>
+				<div><a href="class_list.html"><img src="img/class.png">
+					<p>分类</p></a>
+				</div>
+				<div><img src="img/money2.png">
+					<p>佣金</p>
+				</div>
+				<div><a href="acrt.html"><img src="img/cart.jpg">
+					<p>购物车</p></a>
+				</div>
+				<div><a href="person.html"><img src="img/user.png">
+					<p>用户</p></a>
+				</div>
+			</div>
+
+	</body>
+</html>
